@@ -54,7 +54,7 @@ chmod +x /usr/local/bin/log-limit
 chmod +x /usr/local/bin/log-ban
 chmod +x /usr/local/bin/user-generate
 chmod +x /usr/local/bin/user-list
-chmod +x /usr/local/bin/diagnose
+chmod +x /usr/local/bin/diagnosa
 chmod +x /usr/local/bin/premium-script
 chmod +x /usr/local/bin/user-delete-expired
 chmod +x /usr/local/bin/auto-reboot
