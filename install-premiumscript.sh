@@ -1,6 +1,6 @@
 #!/bin/bash
-# Created by http://www.vps-murah.net
-# Modified by 0123456
+
+# Modified by Jhim Harris
 
 cd
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
@@ -21,7 +21,7 @@ cat > /root/limit.sh <<END3
 END3
 
 cd /usr/local/bin
-wget -O premium-script.tar.gz "https://raw.githubusercontent.com/harris1391/premscript/master/premium-script.tar.gz"
+wget -O premium-script.tar.gz "https://raw.githubusercontent.com/harris1391/autoscript/premium-script.tar.gz"
 tar -xvf premium-script.tar.gz
 rm -f premium-script.tar.gz
 
@@ -54,7 +54,7 @@ chmod +x /usr/local/bin/log-limit
 chmod +x /usr/local/bin/log-ban
 chmod +x /usr/local/bin/user-generate
 chmod +x /usr/local/bin/user-list
-chmod +x /usr/local/bin/diagnosa
+chmod +x /usr/local/bin/diagnose
 chmod +x /usr/local/bin/premium-script
 chmod +x /usr/local/bin/user-delete-expired
 chmod +x /usr/local/bin/auto-reboot
@@ -79,5 +79,5 @@ echo " "
 echo "Premium Script Successfully Installed!"
 echo "Restarting all services..."
 echo "Wait for a few minutes..."
-echo "Modified by 0123456"
+echo "Modified by Jhim Harris"
 echo " "
