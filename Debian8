@@ -358,9 +358,9 @@ tar -czf /home/vps/public_html/client.tar.gz client.ovpn
 cd
 
 # Restart openvpn
-/etc/init.d/openvpn restart
-service openvpn start
-service openvpn status
+service openvpn@server restart
+service openvpn@server start
+service openvpn@server status
 
 #Setting UFW
 apt-get install ufw
@@ -487,12 +487,13 @@ chown -R www-data:www-data /home/vps/public_html
 service nginx start
 service php5-fpm start
 
-service openvpn restart
+service openvpn@server restart
 service snmpd restart
 service ssh restart
 service dropbear restart
 service fail2ban restart
 service squid3 restart
+service stunnel4 restart
 
 service pptpd restart
 sysv-rc-conf rc.local on
@@ -548,4 +549,4 @@ echo "     Mirror (*.tar.gz)       : http://$MYIP/openvpn.tar.gz"  | tee -a log-
 
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "----------- Script Created By Jhim Harris
+echo "----------- Script Created By Jhim Harris"
