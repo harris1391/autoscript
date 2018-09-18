@@ -5580,13 +5580,13 @@ asciiText () {
 		"Debian")
 			if [[ "$no_color" != "1" ]]; then
 				c1=$(getColor 'blue') # blue
-				c2=$(getColor 'light red') # light red
+				c2=$(getColor 'green') # green
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
 			startline="1"
 			logowidth="25"
 			fulloutput=(""
-"                         %s"
+"                              %s"
 "${c1}   ________________      %s"
 "${c1}  |\               \     %s"
 "${c1}  | \               \    %s"
@@ -5599,7 +5599,7 @@ asciiText () {
 "${c1}    \  |              |  %s"
 "${c1}     \ |              |  %s"
 "${c1}      \|______________|  %s"
-"                         %s")
+"                              %s")
 		;;
 
 		*)
