@@ -2903,30 +2903,33 @@ asciiText () {
 			source "$art"
 		;;
 
-		"ALDOS")
+		"Debian")
 			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'light grey') # light grey
+				c1=$(getColor 'blue') # blue
+                                c2=$(getColor 'green') # green
+				c3=$(getColor 'yellow') # yellow
+				c4=$(getColor 'white') # white
+				c5=$(getColor 'red') # red
+
 			fi
-			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
-			startline="0"
-			logowidth="27"
-			fulloutput=(
-"${c1}                           %s"
-"${c1}           # ## #          %s"
-"${c1}        # ######## #       %s"
-"${c1}      # ### ######## #     %s"
-"${c1}     # #### ######### #    %s"
-"${c1}   # #### # # # # #### #   %s"
-"${c1}  # ##### #       ##### #  %s"
-"${c1}   # ###### ##### #### #   %s"
-"${c1}    # ############### #    %s"
-"${c1}                           %s"
-"${c2}        _ ___   ___  ___   %s"
-"${c2}   __ _| |   \ / _ \/ __|  %s"
-"${c2}  / _' | | |) | (_) \__ \  %s"
-"${c2}  \__,_|_|___/ \___/|___/  %s"
-"${c1}                           %s"
-"${c1}                           %s")
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			startline="1"
+			logowidth="25"
+			fulloutput=(""
+"                         %s"
+"${c1}   ________________      %s"
+"${c2}  |\  JHIM  HARRIS \     %s"
+"${c3}  | \  JHIM  HARRIS \    %s"
+"${c4}  |  \  JHIM  HARRIS \   %s"
+"${c5}  |   \ ______________\  %s"
+"${c1}  |    | JHIM  HARRIS |  %s"
+"${c2}  |    | JHIM  HARRIS |  %s"
+"${c3}  |    | JHIM  HARRIS |  %s"
+"${c4}   \   | JHIM  HARRIS |  %s"
+"${c5}    \  | JHIM  HARRIS |  %s"
+"${c1}     \ | JHIM  HARRIS |  %s"
+"${c2}      \|______________|  %s"
+"                         %s")
 		;;
 
 		"Alpine Linux")
@@ -5577,34 +5580,7 @@ asciiText () {
 "                                            %s")
 		;;
 
-		"Debian")
-			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'blue') # blue
-                                c2=$(getColor 'green') # green
-				c3=$(getColor 'yellow') # yellow
-				c4=$(getColor 'white') # white
-				c5=$(getColor 'red') # red
-
-			fi
-			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
-			startline="1"
-			logowidth="25"
-			fulloutput=(""
-"                         %s"
-"${c1}   ________________      %s"
-"${c2}  |\  JHIM  HARRIS \     %s"
-"${c3}  | \  JHIM  HARRIS \    %s"
-"${c4}  |  \  JHIM  HARRIS \   %s"
-"${c5}  |   \ ______________\  %s"
-"${c1}  |    | JHIM  HARRIS |  %s"
-"${c2}  |    | JHIM  HARRIS |  %s"
-"${c3}  |    | JHIM  HARRIS |  %s"
-"${c4}   \   | JHIM  HARRIS |  %s"
-"${c5}    \  | JHIM  HARRIS |  %s"
-"${c1}     \ | JHIM  HARRIS |  %s"
-"${c2}      \|______________|  %s"
-"                         %s")
-		;;
+		
 
 		*)
 			if [[ "${kernel}" =~ "Linux" ]]; then
