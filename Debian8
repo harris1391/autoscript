@@ -551,5 +551,6 @@ echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-in
 echo ""  | tee -a log-install.txt
 echo "----------- Script Created By Jhim Harris----------"
 # Update/upgrade and REBOOT
-apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
+apt-get -y update && apt-get -y upgrade
+apt-get dist-upgrade
 reboot
