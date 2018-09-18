@@ -2913,8 +2913,8 @@ asciiText () {
 
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
-			startline="1"
-			logowidth="25"
+			startline="0"
+			logowidth="32"
 			fulloutput=(""
 "                         %s"
 "${c1}   ________________      %s"
