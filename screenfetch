@@ -2660,9 +2660,9 @@ asciiText () {
 "$c1              \`..---+/---..\`               %s")
 		;;
 
-		"Debian")
+		"Trisquel")
 			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'white') # White
+				c1=$(getColor 'sky blue') # Sky blue
 				c2=$(getColor 'light red') # Light Red
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
@@ -3753,9 +3753,9 @@ asciiText () {
 "${c1}                        ${c2}.           %s")
 		;;
 
-		"Trisquel")
+		"Debian")
 			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'light blue') # Light Blue
+				c1=$(getColor 'sky blue') # Sky Blue
 				c2=$(getColor 'light cyan') # Blue
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
