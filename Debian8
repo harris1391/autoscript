@@ -549,4 +549,4 @@ echo "     Mirror (*.tar.gz)       : http://$MYIP/openvpn.tar.gz"  | tee -a log-
 
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "----------- Script Created By Jhim Harris"
+echo "----------- Script Created By Jhim Harris----------"
