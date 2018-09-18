@@ -178,6 +178,8 @@ service fail2ban restart
 # install squid3
 apt-get -y install squid3
 cat > /etc/squid3/squid.conf <<-END
+# Squid Configuration autoscript By Jhim Harris
+
 acl localhost src 127.0.0.1/32 ::1
 acl to_localhost dst 127.0.0.0/8 0.0.0.0/32 ::1
 acl SSL_ports port 443
@@ -555,4 +557,6 @@ apt-get -y update && apt-get -y upgrade
 apt-get dist-upgrade
 echo ""
 echo "----------- REBOOTING!!! PLEASE WAIT OR YOU MAY EXIT ----------"
+echo "----------- REBOOTING!!! PLEASE WAIT OR YOU MAY EXIT ----------"
+echo "-------- Run MENU and 42.View Installation Log after Reboot--------"
 reboot
