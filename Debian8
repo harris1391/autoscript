@@ -554,3 +554,5 @@ echo "----------- Script Created By Jhim Harris----------"
 apt-get -y update && apt-get -y upgrade
 apt-get dist-upgrade
 
+echo "----------- RRRREEBBBOOOTTTIIINNNGGG ----------"
+reboot
