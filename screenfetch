@@ -5581,6 +5581,9 @@ asciiText () {
 			if [[ "$no_color" != "1" ]]; then
 				c1=$(getColor 'blue') # blue
                                 c2=$(getColor 'green') # green
+				c3=$(getColor 'yellow') # yellow
+				c4=$(getColor 'white') # white
+				c5=$(getColor 'red') # red
 
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
@@ -5589,17 +5592,17 @@ asciiText () {
 			fulloutput=(""
 "                         %s"
 "${c1}   ________________      %s"
-"${c1}  |\                      \     %s"
-"${c1}  | \                      \    %s"
-"${c1}  |  \                      \   %s"
-"${c1}  |   \ ______________\  %s"
-"${c1}  |    |                     |  %s"
-"${c1}  |    |                     |  %s"
-"${c1}  |    |                     |  %s"
-"${c2}   \   | JHIM  HARRIS |  %s"
-"${c1}    \  |                     |  %s"
-"${c1}     \ |                     |  %s"
-"${c1}      \|______________|  %s"
+"${c2}  |\  JHIM  HARRIS \     %s"
+"${c3}  | \  JHIM  HARRIS \    %s"
+"${c4}  |  \  JHIM  HARRIS \   %s"
+"${c5}  |   \ ______________\  %s"
+"${c1}  |    | JHIM  HARRIS |  %s"
+"${c2}  |    | JHIM  HARRIS |  %s"
+"${c3}  |    | JHIM  HARRIS |  %s"
+"${c4}   \   | JHIM  HARRIS |  %s"
+"${c5}    \  | JHIM  HARRIS |  %s"
+"${c1}     \ | JHIM  HARRIS |  %s"
+"${c2}      \|______________|  %s"
 "                         %s")
 		;;
 
