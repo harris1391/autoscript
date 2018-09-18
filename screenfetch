@@ -3753,7 +3753,7 @@ asciiText () {
 "${c1}                        ${c2}.           %s")
 		;;
 
-		"Debian")
+		"Debiangom")
 			if [[ "$no_color" != "1" ]]; then
 				c1=$(getColor 'sky blue') # Sky Blue
 				c2=$(getColor 'light cyan') # Blue
@@ -3921,7 +3921,7 @@ asciiText () {
 "${c1}         eeeeeeeeeeeeeeeee          %s")
 	;;
 
-		"Android")
+		"Debian")
 			if [[ "$no_color" != "1" ]]; then
 				c1=$(getColor 'white') # White
 				c2=$(getColor 'light green') # Bold Green
