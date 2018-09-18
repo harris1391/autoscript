@@ -56,7 +56,7 @@ apt-get -y remove sendmail*
 apt-get update; apt-get -y upgrade;
 
 # install webserver
-apt-get -y install nginx php5-fpm php5-cli
+apt-get -y install nginx php-fpm php-cli
 
 # install essential package
 
@@ -153,7 +153,7 @@ server {
 
 END4
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
-service php5-fpm restart
+service php-fpm restart
 service nginx restart
 
 # setting port ssh
@@ -262,7 +262,7 @@ sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="NightBreakerxz"|' 
 sed -i 's|export KEY_NAME="EasyRSA"|export KEY_NAME="NightBreakerxz"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_OU=changeme|export KEY_OU=NightBreakerxz|' /etc/openvpn/easy-rsa/vars
 #Create Diffie-Helman Pem
-openssl dhparam -out /etc/openvpn/dh2048.pem 2048
+openssl dhparam -out /etc/openvpn/dh3072.pem 3072
 # Create PKI
 cd /etc/openvpn/easy-rsa
 . ./vars
@@ -288,7 +288,7 @@ dev tun
 ca ca.crt
 cert server.crt
 key server.key
-dh dh2048.pem
+dh dh3072.pem
 client-cert-not-required
 username-as-common-name
 plugin /usr/lib/openvpn/openvpn-plugin-auth-pam.so login
