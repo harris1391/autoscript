@@ -2912,7 +2912,7 @@ asciiText () {
 				c5=$(getColor 'red') # red
 
 			fi
-			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}";c3="${my_lcolor}";c4="${my_lcolor}";c5="${my_lcolor}"; fi
 			startline="0"
 			logowidth="32"
 			fulloutput=(""
