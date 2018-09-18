@@ -5383,7 +5383,7 @@ asciiText () {
 
 		"Debian")
 			if [[ "$no_color" != "1" ]]; then
-				c1=$(getColor 'light blue') # Light Blue
+				c1=$(getColor 'light red') # Light Red
 				c2=$(getColor 'light blue') # Light Blue
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
