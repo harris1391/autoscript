@@ -550,3 +550,6 @@ echo "     Mirror (*.tar.gz)       : http://$MYIP/openvpn.tar.gz"  | tee -a log-
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "----------- Script Created By Jhim Harris----------"
+# Update/upgrade and REBOOT
+apt-get -y update && apt-get -y upgrade && apt-get -y dist-upgrade
+reboot
