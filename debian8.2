@@ -219,6 +219,7 @@ END
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 # OpenVPN Configuration by Jhim Harris
+# Already configured for SUN Sim TU Promos
 
 client
 dev tun
@@ -245,6 +246,12 @@ route-method exe
 route-delay 2
 cipher AES-128-CBC
 http-proxy $MYIP 8443
+http-proxy-option CUSTOM-HEADER "X-Online-Host weixin.qq.com"
+http-proxy-option CUSTOM-HEADER "Host: weixin.qq.com"
+http-proxy-option CUSTOM-HEADER "X-Forward-Host weixin.qq.com"
+http-proxy-option CUSTOM-HEADER "Connection: Keep-Alive"
+http-proxy-option CUSTOM-HEADER "Proxy-Connection: keep-alive"
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
 http-proxy-retry
 dhcp-option DNS 8.8.8.8
 dhcp-option DNS 8.8.4.4
