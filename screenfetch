@@ -2903,7 +2903,7 @@ asciiText () {
 			source "$art"
 		;;
 
-		"Ubuntu")
+		"Debian")
 			if [[ "$no_color" != "1" ]]; then
 				c1=$(getColor 'blue') # blue
                                 c2=$(getColor 'green') # green
