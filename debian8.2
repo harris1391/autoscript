@@ -33,6 +33,9 @@ apt-get update;apt-get -y install wget curl;
 # set time GMT +8
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 
+# Local Configuration
+sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
+service ssh restart
 
 # update
 apt-get update; apt-get -y upgrade;
@@ -42,9 +45,6 @@ apt-get -y install nginx php5-fpm php5-cli
 
 # install essential package
 
-apt-get -y install bmon iftop htop nmap axel nano iptables traceroute sysv-rc-conf dnsutils bc nethogs openvpn less screen psmisc apt-file whois ptunnel ngrep mtr git zsh snmp snmpd snmp-mibs-downloader unzip unrar rsyslog debsums rkhunter
-apt-get -y install build-essential
-apt-get -y install libio-pty-perl libauthen-pam-perl apt-show-versions
 
 # disable exim
 service exim4 stop
