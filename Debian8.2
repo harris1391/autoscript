@@ -327,11 +327,11 @@ screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:730
 # install ddos deflate
 cd
 apt-get -y install dnsutils dsniff
-wget https://github.com/harris1391/autoscript/master/ddos-deflate-master.zip
-unzip ddos-deflate-master.zip
+wget https://github.com/jgmdev/ddos-deflate/archive/master.zip
+unzip master.zip
 cd ddos-deflate-master
 ./install.sh
-rm -rf /root/ddos-deflate-master.zip
+rm -rf /root/master.zip
 
 # setting banner
 rm /etc/issue.net
