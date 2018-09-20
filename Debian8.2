@@ -240,6 +240,7 @@ END
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 # OpenVPN Configuration by Jhim Harris
+# Ready for SUN Sim use
 
 client
 dev tun
@@ -479,7 +480,7 @@ echo ""  | tee -a log-install.txt
 echo "----------- Script Created By Jhim Harris----------"
 # Update/upgrade and REBOOT
 apt-get -y update && apt-get -y upgrade
-apt-get dist-upgrade
+apt-get -y dist-upgrade
 echo ""
 echo "----------- REBOOTING!!! PLEASE WAIT OR YOU MAY EXIT ----------"
 echo "----------- REBOOTING!!! PLEASE WAIT OR YOU MAY EXIT ----------"
