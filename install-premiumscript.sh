@@ -7,7 +7,7 @@ sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
 sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.local
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.d/rc.local
 sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.d/rc.local
-echo "0 0 * * * root /usr/local/bin/user-expire" > /etc/cron.d/user-expire
+
 
 
 cat > /root/ban.sh <<END3
