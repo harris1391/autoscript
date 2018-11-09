@@ -41,12 +41,7 @@ chmod +x /usr/local/bin/user-unban
 chmod +x /usr/local/bin/user-unlock
 chmod +x /usr/local/bin/user-password
 chmod +x /usr/local/bin/user-log
-chmod +x /usr/local/bin/user-add-pptp
-chmod +x /usr/local/bin/user-delete-pptp
-chmod +x /usr/local/bin/alluser-pptp
-chmod +x /usr/local/bin/user-login-pptp
-chmod +x /usr/local/bin/user-expire-pptp
-chmod +x /usr/local/bin/user-detail-pptp
+
 chmod +x /usr/local/bin/bench-network
 chmod +x /usr/local/bin/speedtest
 chmod +x /usr/local/bin/ram
